@@ -10,7 +10,7 @@
         <div id="container">
 
             <div id="gold">
-                <h3>Your Gold: {{ request.session.gold }}</h3>
+                <h1>Your Gold: {{ request.session.gold }}</h1>
             </div><!--end gold-->
 
             <div id="farm">
@@ -54,13 +54,17 @@
             </div><!--end casino-->
 
             <div id="activity">
-                <h4>Activity</h4>
-                {% for act in request.session.activities %}
-                    <p class="{{ act.class }}"> {{ act.activity }} </p>
-                {% endfor %}
+                <h2>Activity</h2>
+
+                <div id="act_box">
+                    {% for act in request.session.activities %}
+                        <p class="{{ act.class }}"> {{ act.activity }} </p>
+                    {% endfor %}
+                </div><!--end act_box-->
+
             </div><!--end activity-->
 
-            <a href="/reset">Reset</a>
+            <a href="/reset">RESET</a>
 
         </div><!--end container-->
     </body>
