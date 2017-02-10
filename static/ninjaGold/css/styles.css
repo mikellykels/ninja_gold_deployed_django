@@ -1,0 +1,20 @@
+*{
+    margin: 0px auto;
+    font-family: Arial, sans-serif;
+}
+
+#container{
+    width: 970px;
+}
+
+.win{
+    color: green;
+}
+
+.lose{
+    color: red
+}
+
+div{
+    margin-top: 20px;
+}
